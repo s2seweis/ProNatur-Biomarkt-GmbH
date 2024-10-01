@@ -37,7 +37,11 @@ namespace ProNatur_Biomarkt_GmbH
                 loadingbarTimer.Stop();
 
                 // Finish Loading
+<<<<<<< HEAD
                 // Just a simple commit for master
+=======
+                // Just a simple commit for guest
+>>>>>>> guest
             }
         }
 

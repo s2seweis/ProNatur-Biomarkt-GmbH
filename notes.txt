@@ -61,3 +61,24 @@ Die Historie der Commits anzeigen (git log)
 Zusammenfassung
 Eine Code-Revision mit Git ist also der gesamte Prozess der Verwaltung und Überprüfung von Codeänderungen, einschließlich der Erstellung von Commits, der Arbeit mit Branches, der Durchführung von Merges und der Durchführung von Code-Reviews. Dieser Prozess hilft, die Qualität des Codes zu gewährleisten und ermöglicht eine effiziente Zusammenarbeit im Team. 
 
+Git Befehle:
+
+Show the branches
+git branch
+
+Create a new branch
+git branch <branch name>
+
+Go to the branch
+git checkout branch
+
+=> Change files in directory 
+
+When branch only exists locally: Pushes your changes from the local branch to the remote repository.
+=> git push --set-upstream origin <branch name>
+
+
+
+
+
+
