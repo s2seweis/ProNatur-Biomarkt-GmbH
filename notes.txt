@@ -1,0 +1,13 @@
+1. Windows Forms
+Windows Forms ist die ältere der beiden Technologien und wurde mit .NET eingeführt. Es bietet eine einfache, schnelle Möglichkeit zur Erstellung von Desktop-Anwendungen, hat jedoch einige Einschränkungen, insbesondere bei modernen, anspruchsvollen Benutzeroberflächen.
+
+=> Erst Windows Form für die Grundlagen, danach PWF
+
+2. WPF (Windows Presentation Foundation)
+WPF ist eine neuere Technologie, die mit .NET Framework 3.0 eingeführt wurde. Sie ist auf die Entwicklung moderner, flexibler und grafisch ansprechender Benutzeroberflächen ausgerichtet. WPF verwendet eine deklarative Sprache (XAML) zur Gestaltung der UI und bietet viele fortschrittliche Funktionen.
+
+In WPF wird statt HTML das XAML (eXtensible Application Markup Language) verwendet. XAML ist eine deklarative Markup-Sprache, die ähnlich wie HTML zur Beschreibung der Benutzeroberfläche dient. Sie wird verwendet, um das Layout, die Steuerungselemente und andere visuelle Aspekte der Anwendung zu definieren, ähnlich wie HTML das Layout einer Webseite beschreibt.
+
+Oberste Anwendungsschicht:
+Start Position: CenterScreen
+Text: Pronatur-Biomarkt GmbH
