@@ -1,3 +1,5 @@
+***Windows Forms versus WPF           
+
 1. Windows Forms
 Windows Forms ist die ältere der beiden Technologien und wurde mit .NET eingeführt. Es bietet eine einfache, schnelle Möglichkeit zur Erstellung von Desktop-Anwendungen, hat jedoch einige Einschränkungen, insbesondere bei modernen, anspruchsvollen Benutzeroberflächen.
 
@@ -8,6 +10,54 @@ WPF ist eine neuere Technologie, die mit .NET Framework 3.0 eingeführt wurde. S
 
 In WPF wird statt HTML das XAML (eXtensible Application Markup Language) verwendet. XAML ist eine deklarative Markup-Sprache, die ähnlich wie HTML zur Beschreibung der Benutzeroberfläche dient. Sie wird verwendet, um das Layout, die Steuerungselemente und andere visuelle Aspekte der Anwendung zu definieren, ähnlich wie HTML das Layout einer Webseite beschreibt.
 
-Oberste Anwendungsschicht:
+***Kommentar:***
+
+Oberste Anwendungsschicht/ Window
+Eigenschaftsfenster:
 Start Position: CenterScreen
 Text: Pronatur-Biomarkt GmbH
+
+// Normalerweise immer den CamelCase
+
+// Windows hat sich entschieden, die Standard Notierung zu verändern, wenn es um die Events aus de UI geht
+// Hinweis: Extras => Optionen => Windows Form-Designer => Große Anfangsbuchstaben für Ereignishandler und Methoden => False to True, zum deaktivieren
+
+=>In Windows Forms alle Elemente können Events haben
+=>Du kannst alle Elemente im Code über den Namen ansprechen
+
+***Git (Versionskontrolle)***
+
+Wenn man einen Fehler in seinen Code gepackt hat und dadurch die Anwendung nicht mehr läuft, 
+kann man mit der Versionskontrolle zu einem früheren Zeitpunkt deines Codes zurück springen
+
+#Code Revision?
+
+Eine Code-Revision mit Git bezieht sich auf den Prozess der Überprüfung und Bearbeitung von Codeänderungen, die in einem Git-Repository gespeichert sind. Dieser Prozess umfasst mehrere Schritte und Konzepte:
+
+1. Versionierung
+Git ermöglicht es, verschiedene Versionen eines Projekts zu speichern. Jede Änderung, die du am Code vornimmst und committest, wird als Revision betrachtet. Dies bedeutet, dass du jederzeit zu früheren Versionen zurückkehren kannst, falls nötig.
+
+2. Commit
+Ein Commit in Git ist ein Schnappschuss des aktuellen Zustands des Repositories zu einem bestimmten Zeitpunkt. Jeder Commit enthält:
+
+Eine eindeutige ID (SHA-Hash)
+Die commit-Nachricht, die beschreibt, was geändert wurde
+Informationen über die Authoren und den Zeitstempel
+3. Branching
+Mit Git kannst du Branches erstellen, um verschiedene Entwicklungsstränge zu verwalten. Zum Beispiel kannst du einen Branch für neue Features oder Bugfixes erstellen. Dies ermöglicht parallele Entwicklungen, ohne den Hauptentwicklungsstrang (häufig als main oder master bezeichnet) zu stören.
+
+4. Merge und Pull Requests
+Um Änderungen von einem Branch in einen anderen zu integrieren, wird der Merge-Prozess verwendet. Bei der Arbeit in Teams ist es üblich, Pull Requests (oder Merge Requests) zu erstellen. Das ist ein formeller Prozess, bei dem Teammitglieder die Änderungen überprüfen und diskutieren können, bevor sie in den Hauptbranch integriert werden.
+
+5. Code Review
+Eine Code-Revision beinhaltet oft eine formelle Überprüfung des Codes durch andere Entwickler. Diese Reviews helfen, Fehler zu finden, die Codequalität zu verbessern und sicherzustellen, dass die Änderungen den Standards des Projekts entsprechen.
+
+6. Revisionskontrolle
+Git ermöglicht es dir, die gesamte Historie der Änderungen im Projekt zu verfolgen. Du kannst:
+
+Die Änderungen zwischen verschiedenen Commits vergleichen (git diff)
+Die Historie der Commits anzeigen (git log)
+Änderungen zurücksetzen oder ändern (git revert, git reset)
+Zusammenfassung
+Eine Code-Revision mit Git ist also der gesamte Prozess der Verwaltung und Überprüfung von Codeänderungen, einschließlich der Erstellung von Commits, der Arbeit mit Branches, der Durchführung von Merges und der Durchführung von Code-Reviews. Dieser Prozess hilft, die Qualität des Codes zu gewährleisten und ermöglicht eine effiziente Zusammenarbeit im Team. 
+

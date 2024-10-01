@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoadingScreen));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.lblLoadingProgress = new System.Windows.Forms.Label();
+            this.loadingProgressbar = new System.Windows.Forms.ProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.loadingbarTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,24 +59,24 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Loading ...";
             // 
-            // label3
+            // lblLoadingProgress
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(432, 455);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 16);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "0%";
+            this.lblLoadingProgress.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lblLoadingProgress.AutoSize = true;
+            this.lblLoadingProgress.Location = new System.Drawing.Point(432, 455);
+            this.lblLoadingProgress.Name = "lblLoadingProgress";
+            this.lblLoadingProgress.Size = new System.Drawing.Size(26, 16);
+            this.lblLoadingProgress.TabIndex = 6;
+            this.lblLoadingProgress.Text = "0%";
             // 
-            // progressBar1
+            // loadingProgressbar
             // 
-            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.loadingProgressbar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar1.Location = new System.Drawing.Point(12, 484);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(758, 57);
-            this.progressBar1.TabIndex = 7;
+            this.loadingProgressbar.Location = new System.Drawing.Point(12, 484);
+            this.loadingProgressbar.Name = "loadingProgressbar";
+            this.loadingProgressbar.Size = new System.Drawing.Size(758, 57);
+            this.loadingProgressbar.TabIndex = 7;
             // 
             // pictureBox1
             // 
@@ -87,6 +89,10 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // loadingbarTimer
+            // 
+            this.loadingbarTimer.Tick += new System.EventHandler(this.loadingbarTimer_Tick);
+            // 
             // LoadingScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -95,8 +101,8 @@
             this.ClientSize = new System.Drawing.Size(782, 553);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.loadingProgressbar);
+            this.Controls.Add(this.lblLoadingProgress);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
@@ -115,9 +121,10 @@
         
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label lblLoadingProgress;
+        private System.Windows.Forms.ProgressBar loadingProgressbar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer loadingbarTimer;
     }
 }
 

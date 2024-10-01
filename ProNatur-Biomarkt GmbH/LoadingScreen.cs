@@ -12,24 +12,33 @@ namespace ProNatur_Biomarkt_GmbH
 {
     public partial class LoadingScreen : Form
     {
+
+        private int loadingBarValue;
+
         public LoadingScreen()
         {
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void LoadingScreen_Load(object sender, EventArgs e)
         {
-
+            loadingbarTimer.Start();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void loadingbarTimer_Tick(object sender, EventArgs e)
         {
+            loadingBarValue += 1;
 
+            lblLoadingProgress.Text = loadingBarValue.ToString() + "%";
+            loadingProgressbar.Value = loadingBarValue;
+
+            if(loadingBarValue >= loadingProgressbar.Maximum)
+            {
+                loadingbarTimer.Stop();
+
+                // Finish Loading
+            }
         }
+
     }
 }
