@@ -36,10 +36,12 @@ namespace ProNatur_Biomarkt_GmbH
             {
                 loadingbarTimer.Stop();
 
-                // Finish Loading
-                // Guest branch read the commit 
-                // Are you sure?
-                // Last Commit from guest branch
+                // Finish loading show main menu screen
+                MainMenuScreen mainMenuscreen = new MainMenuScreen();
+                mainMenuscreen.Show();
+
+                this.Hide();
+
             }
         }
 

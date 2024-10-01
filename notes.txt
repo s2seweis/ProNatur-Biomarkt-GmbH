@@ -25,10 +25,43 @@ Text: Pronatur-Biomarkt GmbH
 =>In Windows Forms alle Elemente können Events haben
 =>Du kannst alle Elemente im Code über den Namen ansprechen
 
+In der Softwareentwicklung, insbesondere bei der Verwendung von Entwicklungsumgebungen wie Visual Studio, gibt es einige grundlegende Begriffe, die wichtig sind, um das Projektmanagement zu verstehen. Hier ist eine Erklärung der Begriffe „Projektmappe“ und „Projekt“:
+
+### Projektmappe (Solution)
+
+- **Definition**: Eine **Projektmappe** (oder **Solution**) ist ein Container, der ein oder mehrere Projekte zusammenfasst. Sie stellt eine übergeordnete Struktur dar, in der die Projekte organisiert sind.
+- **Zweck**: Die Projektmappe ermöglicht es Entwicklern, verschiedene Projekte zu gruppieren, die zusammenarbeiten oder miteinander verbunden sind. Zum Beispiel könnte eine Projektmappe eine Webanwendung, eine Datenbank und eine mobile App enthalten, die alle Teil eines größeren Systems sind.
+- **Dateiformat**: In Visual Studio wird eine Projektmappe in einer Datei mit der Endung `.sln` gespeichert.
+
+### Projekt
+
+- **Definition**: Ein **Projekt** ist eine Sammlung von Dateien und Ressourcen, die zusammen eine spezifische Anwendung oder Funktionalität implementieren. Jedes Projekt kann Quellcode, Konfigurationsdateien, Bibliotheken, Ressourcen wie Bilder und Icons und mehr enthalten.
+- **Zweck**: Ein Projekt konzentriert sich auf eine bestimmte Aufgabe oder Funktionalität innerhalb der Projektmappe. Zum Beispiel könnte ein Projekt eine Webanwendung sein, während ein anderes Projekt eine Datenzugriffsschicht oder eine API bereitstellt.
+- **Dateiformat**: Jedes Projekt hat in der Regel seine eigene Projektdatei, die in Visual Studio unterschiedliche Dateiendungen haben kann, z.B. `.csproj` für C#-Projekte oder `.vbproj` für Visual Basic-Projekte.
+
+### Zusammenfassung
+
+- Eine **Projektmappe** ist der übergeordnete Container für mehrere **Projekte**.
+- Innerhalb einer **Projektmappe** können verschiedene **Projekte** organisiert werden, die zusammenarbeiten und gemeinsame Ressourcen nutzen.
+- Dies ermöglicht eine strukturierte und effiziente Entwicklung komplexer Anwendungen, indem verschiedene Teile der Anwendung in separaten Projekten behandelt werden.
+
+### Beispiel
+
+Stellen Sie sich vor, Sie entwickeln eine Webanwendung. Ihre Projektmappe könnte folgende Projekte enthalten:
+
+1. **Webanwendung**: Das Hauptprojekt, das die Benutzeroberfläche und die Logik für die Webanwendung enthält.
+2. **Datenbankprojekt**: Ein Projekt, das die Datenbankstruktur und -abfragen verwaltet.
+3. **API-Projekt**: Ein Projekt, das eine Schnittstelle für externe Systeme bereitstellt.
+
+Durch die Verwendung von Projektmappen können Sie diese verschiedenen Projekte effizient verwalten und deren Interaktion erleichtern. Wenn Sie weitere Fragen dazu haben oder mehr Details benötigen, lassen Sie es mich wissen!
+
 ***Git (Versionskontrolle)***
 
 Wenn man einen Fehler in seinen Code gepackt hat und dadurch die Anwendung nicht mehr läuft, 
 kann man mit der Versionskontrolle zu einem früheren Zeitpunkt deines Codes zurück springen
+
+=> Elemente zu einem Projekt hinzufügen möchtest dann geht es über => nicht über Projektmappe, 
+sondern über das Projekt: "ProNatur-Biomarkt GmbG"
 
 #Code Revision?
 
