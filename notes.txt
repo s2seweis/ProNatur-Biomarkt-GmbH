@@ -125,7 +125,7 @@ This structured format breaks down the commands into clear sections, making it e
 
 Um über die Konsole eine ältere Version (einen älteren Commit) in Git wiederherzustellen, gibt es verschiedene Methoden, abhängig davon, ob du nur die Dateien zurücksetzen oder auch den Verlauf ändern möchtest. Hier sind die gängigsten Methoden:
 
-### 1. **Checkout eines älteren Commits**
+### 1. **Checkout eines älteren Commits** Ist es weg?
 
 Wenn du nur die Dateien im Arbeitsverzeichnis auf den Zustand eines älteren Commits zurücksetzen möchtest, ohne den Verlauf zu ändern:
 
