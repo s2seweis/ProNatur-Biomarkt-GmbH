@@ -61,21 +61,69 @@ Die Historie der Commits anzeigen (git log)
 Zusammenfassung
 Eine Code-Revision mit Git ist also der gesamte Prozess der Verwaltung und Überprüfung von Codeänderungen, einschließlich der Erstellung von Commits, der Arbeit mit Branches, der Durchführung von Merges und der Durchführung von Code-Reviews. Dieser Prozess hilft, die Qualität des Codes zu gewährleisten und ermöglicht eine effiziente Zusammenarbeit im Team. 
 
-Git Befehle:
+Here’s a structured and clearer presentation of the Git commands and workflow you provided:
 
-Show the branches
-git branch
+---
 
-Create a new branch
-git branch <branch name>
+## Git Befehle
 
-Go to the branch
-git checkout branch
+### 1. **Branch-Verwaltung**
 
-=> Change files in directory 
+- **Alle Branches anzeigen:**
+  ```bash
+  git branch
+  ```
 
-When branch only exists locally: Pushes your changes from the local branch to the remote repository.
-=> git push --set-upstream origin <branch name>
+- **Neuen Branch erstellen:**
+  ```bash
+  git branch <branch name>
+  ```
+
+- **Zu einem Branch wechseln:**
+  ```bash
+  git checkout <branch name>
+  ```
+
+### 2. **Änderungen auf den Remote-Server übertragen**
+
+Wenn der Branch nur lokal existiert, um Ihre Änderungen von dem lokalen Branch auf das Remote-Repository zu pushen:
+```bash
+git push --set-upstream origin <branch name>
+```
+
+### 3. **Zusammenführen des Guest-Branches in den Master-Branch**
+
+#### Schritte zum Mergen:
+
+1. **Zurück zum Master-Branch wechseln:**
+   ```bash
+   git checkout master
+   ```
+
+2. **Master-Branch aktualisieren:**
+   ```bash
+   git pull origin master
+   ```
+
+3. **Guest-Branch in den Master-Branch mergen:**
+   ```bash
+   git merge guest
+   ```
+
+4. **Änderungen zum Remote-Repository pushen:**
+   ```bash
+   git push origin master
+   ```
+
+### 4. **Hinweis zum Mergen**
+
+Wenn Sie den Guest-Branch in den Master-Branch mergen, werden die Änderungen, die im Guest-Branch vorgenommen wurden, in Ihren lokalen Master-Branch integriert. Diese Änderungen sind jedoch nur in Ihrem lokalen Repository sichtbar, bis Sie sie auf das Remote-Repository pushen.
+
+---
+
+This structured format breaks down the commands into clear sections, making it easier to understand and follow the workflow. Let me know if you need any further adjustments!
+
+
 
 
 
