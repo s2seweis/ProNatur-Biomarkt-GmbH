@@ -210,6 +210,18 @@ Wenn du einen bestimmten Commit rückgängig machen und die Änderungen beibehal
 
 Wähle die Methode, die am besten zu deinem Anwendungsfall passt. Wenn du noch Fragen hast, lass es mich wissen!
 
+Microsoft SQL Server
+
+CREATE TABLE [Pro-Natur Test DB].[dbo].Produke (
+	Id int PRIMARY KEY,
+	ProduktName varchar(50),
+	Marke varchar(50),
+	Kategorie varchar(50),
+	Preis float
+)
+
+[dbo] = Das Kürzel [dbo] steht für das "Database Owner"-Schema in SQL-Server-Datenbanken. Es ist das Standardschema, das häufig verwendet wird, wenn keine anderen Schemas definiert sind. Jedes Objekt, das unter dem Schema [dbo] erstellt wird, gehört standardmäßig dem Benutzer, der die Datenbank besitzt, also dem Datenbankbesitzer
+
 
 
 
