@@ -38,23 +38,22 @@
             this.btnProducts.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnProducts.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProducts.BackgroundImage")));
             this.btnProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProducts.Location = new System.Drawing.Point(14, 14);
-            this.btnProducts.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btnProducts.MaximumSize = new System.Drawing.Size(275, 125);
+            this.btnProducts.Location = new System.Drawing.Point(88, 148);
+            this.btnProducts.Margin = new System.Windows.Forms.Padding(5);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Size = new System.Drawing.Size(275, 125);
             this.btnProducts.TabIndex = 0;
             this.btnProducts.Text = "Produkte verwalten";
             this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // btnBill
             // 
             this.btnBill.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBill.BackgroundImage")));
             this.btnBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBill.Location = new System.Drawing.Point(299, 14);
+            this.btnBill.Location = new System.Drawing.Point(432, 148);
             this.btnBill.Margin = new System.Windows.Forms.Padding(5);
-            this.btnBill.MaximumSize = new System.Drawing.Size(275, 125);
             this.btnBill.Name = "btnBill";
             this.btnBill.Size = new System.Drawing.Size(275, 125);
             this.btnBill.TabIndex = 1;
@@ -66,12 +65,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(783, 553);
+            this.ClientSize = new System.Drawing.Size(797, 454);
             this.Controls.Add(this.btnBill);
             this.Controls.Add(this.btnProducts);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "MainMenuScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hauptmenu";
