@@ -222,6 +222,114 @@ CREATE TABLE [Pro-Natur Test DB].[dbo].Produke (
 
 [dbo] = Das Kürzel [dbo] steht für das "Database Owner"-Schema in SQL-Server-Datenbanken. Es ist das Standardschema, das häufig verwendet wird, wenn keine anderen Schemas definiert sind. Jedes Objekt, das unter dem Schema [dbo] erstellt wird, gehört standardmäßig dem Benutzer, der die Datenbank besitzt, also dem Datenbankbesitzer
 
+20 most commonly used SQL commands, categorized by their functionality:
+
+### Data Query Commands
+1. **SELECT**: Retrieve data from one or more tables.
+   ```sql
+   SELECT column1, column2 FROM table_name;
+   ```
+
+2. **FROM**: Specify the table from which to retrieve the data.
+
+3. **WHERE**: Filter records based on specified conditions.
+   ```sql
+   SELECT * FROM table_name WHERE condition;
+   ```
+
+4. **ORDER BY**: Sort the result set in ascending or descending order.
+   ```sql
+   SELECT * FROM table_name ORDER BY column_name ASC|DESC;
+   ```
+
+5. **GROUP BY**: Group rows sharing a property to aggregate data.
+   ```sql
+   SELECT column1, COUNT(*) FROM table_name GROUP BY column1;
+   ```
+
+6. **HAVING**: Filter records after aggregation (used with GROUP BY).
+   ```sql
+   SELECT column1, COUNT(*) FROM table_name GROUP BY column1 HAVING COUNT(*) > 1;
+   ```
+
+### Data Manipulation Commands
+7. **INSERT**: Add new records to a table.
+   ```sql
+   INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+   ```
+
+8. **UPDATE**: Modify existing records in a table.
+   ```sql
+   UPDATE table_name SET column1 = value1 WHERE condition;
+   ```
+
+9. **DELETE**: Remove records from a table.
+   ```sql
+   DELETE FROM table_name WHERE condition;
+   ```
+
+### Data Definition Commands
+10. **CREATE TABLE**: Create a new table in the database.
+    ```sql
+    CREATE TABLE table_name (column1 datatype, column2 datatype);
+    ```
+
+11. **ALTER TABLE**: Modify an existing table (add, drop, or modify columns).
+    ```sql
+    ALTER TABLE table_name ADD column_name datatype;
+    ```
+
+12. **DROP TABLE**: Delete an existing table and all its data.
+    ```sql
+    DROP TABLE table_name;
+    ```
+
+### Data Control Commands
+13. **GRANT**: Give users access privileges to database objects.
+    ```sql
+    GRANT SELECT ON table_name TO user_name;
+    ```
+
+14. **REVOKE**: Remove access privileges from users.
+    ```sql
+    REVOKE SELECT ON table_name FROM user_name;
+    ```
+
+### Transaction Control Commands
+15. **BEGIN TRANSACTION**: Start a transaction.
+    ```sql
+    BEGIN TRANSACTION;
+    ```
+
+16. **COMMIT**: Save all changes made during the transaction.
+    ```sql
+    COMMIT;
+    ```
+
+17. **ROLLBACK**: Undo changes made during the transaction.
+    ```sql
+    ROLLBACK;
+    ```
+
+### Utility Commands
+18. **EXPLAIN**: Get a query execution plan to understand performance.
+    ```sql
+    EXPLAIN SELECT * FROM table_name;
+    ```
+
+19. **SHOW TABLES**: List all tables in the current database.
+    ```sql
+    SHOW TABLES;
+    ```
+
+20. **DESCRIBE**: Get information about a table's structure.
+    ```sql
+    DESCRIBE table_name;
+    ```
+
+These commands form the backbone of SQL operations, allowing users to manage and manipulate data in relational databases efficiently.
+
+
 
 
 
