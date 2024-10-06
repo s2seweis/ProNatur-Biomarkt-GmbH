@@ -17,8 +17,9 @@ namespace ProNatur_Biomarkt_GmbH
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Responsible for Loading the entry screen
-            // Application.Run(new LoadingScreen());
-            Application.Run(new ProductsScreen());
+            //Application.Run(new LoadingScreen());
+            //Application.Run(new ProductsScreen());
+            Application.Run(new InvoiceScreen());
         }
     }
 }

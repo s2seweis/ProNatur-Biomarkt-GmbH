@@ -53,6 +53,8 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(344, 455);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 16);
@@ -63,6 +65,7 @@
             // 
             this.lblLoadingProgress.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblLoadingProgress.AutoSize = true;
+            this.lblLoadingProgress.ForeColor = System.Drawing.Color.White;
             this.lblLoadingProgress.Location = new System.Drawing.Point(432, 455);
             this.lblLoadingProgress.Name = "lblLoadingProgress";
             this.lblLoadingProgress.Size = new System.Drawing.Size(26, 16);
@@ -97,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(782, 553);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);

@@ -35,7 +35,7 @@
             this.textBoxProductBrand = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textProductPrice = new System.Windows.Forms.TextBox();
+            this.textBoxProductPrice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxProductCategory = new System.Windows.Forms.ComboBox();
             this.btnProductSave = new System.Windows.Forms.Button();
@@ -104,16 +104,16 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Kategorie";
             // 
-            // textProductPrice
+            // textBoxProductPrice
             // 
-            this.textProductPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.textProductPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textProductPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textProductPrice.ForeColor = System.Drawing.Color.White;
-            this.textProductPrice.Location = new System.Drawing.Point(107, 109);
-            this.textProductPrice.Name = "textProductPrice";
-            this.textProductPrice.Size = new System.Drawing.Size(85, 26);
-            this.textProductPrice.TabIndex = 9;
+            this.textBoxProductPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.textBoxProductPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxProductPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxProductPrice.ForeColor = System.Drawing.Color.White;
+            this.textBoxProductPrice.Location = new System.Drawing.Point(107, 109);
+            this.textBoxProductPrice.Name = "textBoxProductPrice";
+            this.textBoxProductPrice.Size = new System.Drawing.Size(85, 26);
+            this.textBoxProductPrice.TabIndex = 9;
             // 
             // label4
             // 
@@ -214,7 +214,9 @@
             this.productsDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.productsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productsDGV.Location = new System.Drawing.Point(15, 170);
+            this.productsDGV.MultiSelect = false;
             this.productsDGV.Name = "productsDGV";
+            this.productsDGV.ReadOnly = true;
             this.productsDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.productsDGV.RowHeadersVisible = false;
             this.productsDGV.RowHeadersWidth = 51;
@@ -223,8 +225,10 @@
             this.productsDGV.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.productsDGV.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.productsDGV.RowTemplate.Height = 24;
+            this.productsDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.productsDGV.Size = new System.Drawing.Size(770, 273);
             this.productsDGV.TabIndex = 15;
+            this.productsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productsDGV_CellContentClick);
             // 
             // ProductsScreen
             // 
@@ -238,7 +242,7 @@
             this.Controls.Add(this.btnProduceEdit);
             this.Controls.Add(this.btnProductSave);
             this.Controls.Add(this.comboBoxProductCategory);
-            this.Controls.Add(this.textProductPrice);
+            this.Controls.Add(this.textBoxProductPrice);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxProductBrand);
@@ -263,7 +267,7 @@
         private System.Windows.Forms.TextBox textBoxProductBrand;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textProductPrice;
+        private System.Windows.Forms.TextBox textBoxProductPrice;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBoxProductCategory;
         private System.Windows.Forms.Button btnProductSave;

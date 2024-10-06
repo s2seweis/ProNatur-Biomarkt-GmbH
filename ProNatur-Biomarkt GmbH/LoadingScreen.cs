@@ -12,12 +12,24 @@ namespace ProNatur_Biomarkt_GmbH
 {
     public partial class LoadingScreen : Form
     {
-
         private int loadingBarValue;
 
         public LoadingScreen()
         {
             InitializeComponent();
+
+            // Automatische Skalierung deaktivieren
+            this.AutoScaleMode = AutoScaleMode.None;
+
+            // Fester Randstil, um Größenänderungen zu verhindern
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+
+            // Fenstergröße explizit festlegen
+            this.Width = 800;
+            this.Height = 600;
+
+            // Verhindern, dass das Fenster maximiert wird
+            this.MaximizeBox = false;
         }
 
         private void LoadingScreen_Load(object sender, EventArgs e)
@@ -32,18 +44,16 @@ namespace ProNatur_Biomarkt_GmbH
             lblLoadingProgress.Text = loadingBarValue.ToString() + "%";
             loadingProgressbar.Value = loadingBarValue;
 
-            if(loadingBarValue >= loadingProgressbar.Maximum)
+            if (loadingBarValue >= loadingProgressbar.Maximum)
             {
                 loadingbarTimer.Stop();
 
-                // Finish loading show main menu screen
-                MainMenuScreen mainMenuscreen = new MainMenuScreen();
-                mainMenuscreen.Show();
+                // Nach dem Laden das Hauptmenü anzeigen
+                MainMenuScreen mainMenuScreen = new MainMenuScreen();
+                mainMenuScreen.Show();
 
                 this.Hide();
-
             }
         }
-
     }
 }
