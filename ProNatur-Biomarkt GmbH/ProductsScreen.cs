@@ -177,6 +177,14 @@ namespace ProNatur_Biomarkt_GmbH
             comboBoxProductCategory.SelectedItem = null;
         }
 
+        private void buttonHauptmenü_Click(object sender, EventArgs e)
+        {
+            MainMenuScreen mainMenuScreen = new MainMenuScreen();
+            mainMenuScreen.Show();
+
+            this.Hide();
+        }
+
         // #######################################################
 
     }

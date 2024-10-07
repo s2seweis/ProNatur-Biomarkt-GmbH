@@ -43,6 +43,7 @@
             this.btnProductClear = new System.Windows.Forms.Button();
             this.btnProductDelete = new System.Windows.Forms.Button();
             this.productsDGV = new System.Windows.Forms.DataGridView();
+            this.buttonHauptmenü = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productsDGV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -230,12 +231,27 @@
             this.productsDGV.TabIndex = 15;
             this.productsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productsDGV_CellContentClick);
             // 
+            // buttonHauptmenü
+            // 
+            this.buttonHauptmenü.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.buttonHauptmenü.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHauptmenü.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHauptmenü.ForeColor = System.Drawing.Color.White;
+            this.buttonHauptmenü.Location = new System.Drawing.Point(697, 13);
+            this.buttonHauptmenü.Name = "buttonHauptmenü";
+            this.buttonHauptmenü.Size = new System.Drawing.Size(88, 33);
+            this.buttonHauptmenü.TabIndex = 16;
+            this.buttonHauptmenü.Text = "Hauptmenü";
+            this.buttonHauptmenü.UseVisualStyleBackColor = false;
+            this.buttonHauptmenü.Click += new System.EventHandler(this.buttonHauptmenü_Click);
+            // 
             // ProductsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(798, 453);
+            this.Controls.Add(this.buttonHauptmenü);
             this.Controls.Add(this.productsDGV);
             this.Controls.Add(this.btnProductDelete);
             this.Controls.Add(this.btnProductClear);
@@ -275,5 +291,6 @@
         private System.Windows.Forms.Button btnProductClear;
         private System.Windows.Forms.Button btnProductDelete;
         private System.Windows.Forms.DataGridView productsDGV;
+        private System.Windows.Forms.Button buttonHauptmenü;
     }
 }

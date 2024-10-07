@@ -44,6 +44,8 @@ namespace ProNatur_Biomarkt_GmbH
             // wenn der Button "Rechnung" geklickt wird. Zum Beispiel:
             InvoiceScreen invoiceScreen = new InvoiceScreen();
             invoiceScreen.Show();
+
+            this.Hide();
         }
 
     }
